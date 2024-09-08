@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disha'Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(16, 16, 87);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: goldenrod;
+        font-size: 1.2rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+        margin: 130px 0;
+        align-items: center;
+      }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 40px 85px;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        width: 50%;
+        font-size: 3rem;
+      }
+      .rightSection {
+        width: 50%;
+      }
+      img {
+        width: 90%;
+        margin: 8px;
+      }
+      span {
+        color: blueviolet;
+      }
+      #element {
+        color: rgba(103, 98, 192, 0.719);
+      }
+      .secondSection {
+        max-width: 80vh;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection span {
+        color: grey;
+      }
+      .secondSection .box {
+        background-color: white;
+        width: 45vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 100px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 100px;
+        color: grey;
+        width: 150px;
+        font-size: 13px;
+      }
+      .percentage .bar {
+        border: solid white 1px;
+        background-color: transparent;
+        height: 1px;
+        margin: 40px 85px;
+      }
+      .percentage .bar .color {
+        background-color: rgb(13, 34, 109);
+        width: 50%;
+        color: black;
+        font-size: 1.5rem;
+      }
+      .percentage .bar .color1 {
+        background-color: rgb(109, 55, 13);
+        width: 90%;
+        color: black;
+        font-size: 1.5rem;
+      }
+      .percentage .bar .color2 {
+        background-color: rgb(91, 109, 13);
+        width: 85%;
+        color: black;
+        font-size: 1.5rem;
+      }
+      .percentage .bar .color3 {
+        background-color: rgb(13, 109, 13);
+        width: 35%;
+        color: black;
+        font-size: 1.5rem;
+      }
+      h6 {
+        margin: 80px;
+        font-size: 1.5rem;
+      }
+      footer {
+        background-color: rgb(16, 16, 87);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-left p {
+        margin: 0;
+      }
+
+      .footer-right ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .footer-right ul li {
+        margin: 0;
+      }
+
+      .footer-right ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+      }
+
+      .footer-right ul li a:hover {
+        color: goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Disha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Service.html">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, my name is <span>Disha</span>
+          <div>im a Passionate CS student</div>
+          <div><span id="element"></span></div>
+        </div>
+        <div class="rightSection">
+          <img
+            src="https://i.pinimg.com/originals/d6/af/b6/d6afb6c5702631ed7e304d2ac40fb4f2.gif"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray"> What i have learnt so far</span>
+        <h1>MY SKILLS</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="vertical-title">FIGMA</div>
+            <div class="vertical-desc">
+              I have extensively studied Figma and found it to be an incredibly
+              powerful tool for design. Its real-time collaboration feature
+              allows seamless teamwork, while its user-friendly interface and
+              robust component system ensure a streamlined and efficient
+              workflow. The cloud-based platform provides flexibility and
+              accessibility from any device, and its versatile prototyping
+              capabilities help in creating dynamic, interactive designs.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">HTML & CSS</div>
+            <div class="vertical-desc">
+              I have extensively studied HTML and CSS and have gained a strong
+              grasp of their core principles and advanced techniques. HTML
+              provides the foundational structure for web content, while CSS
+              offers powerful styling options to enhance visual presentation.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">JAVASCRIPT</div>
+            <div class="vertical-desc">
+              I have thoroughly studied JavaScript and developed a strong
+              proficiency in its use. My experience includes mastering core
+              concepts such as variables, functions, and control structures, as
+              well as more advanced topics like asynchronous programming with
+              promises and async/await. I am skilled in manipulating the DOM to
+              create interactive web elements and handle events, and have
+              experience working with popular libraries and frameworks like
+              React
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">REACT JS</div>
+            <div class="vertical-desc">
+              I have thoroughly studied React and gained extensive experience in
+              building modern web applications with it. I am proficient in using
+              React’s component-based architecture to create reusable and
+              maintainable UI components
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="percentage">
+        <h6>My Skills based on percentage</h6>
+        <div class="bar">
+          <div class="color">
+            JavaScript <span style="color: black">50%</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="color1">Figma <span style="color: black">90%</span></div>
+        </div>
+        <div class="bar">
+          <div class="color2">
+            Html & CSS <span style="color: black">85%</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="color3">
+            React Js <span style="color: black">35%</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>CS student</i> .",
+          "UI/UX Designer",
+          " frontend- developer",
+          "Photographer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <br />
+    <br />
+    <br />
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2024 Disha's Portfolio. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms of Service</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

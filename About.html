@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(16, 16, 87);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: goldenrod;
+        font-size: 1.2rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      img {
+        width: 20%;
+        height: auto;
+        border-radius: 20px;
+      }
+      p {
+        max-width: 600px;
+      }
+
+    
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+          padding: 10px;
+        }
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav ul li {
+          margin: 10px 0;
+        }
+        .container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        img {
+          width: 50%;
+          margin: 0;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .left {
+          font-size: 1.2rem; 
+        }
+        img {
+          width: 80%; 
+        }
+        p {
+          font-size: 0.8rem; 
+        }
+      }
+      footer {
+        background-color: rgb(16, 16, 87);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-left p {
+        margin: 0;
+      }
+
+      .footer-right ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .footer-right ul li {
+        margin: 0;
+      }
+
+      .footer-right ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+      }
+
+      .footer-right ul li a:hover {
+        color: goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Disha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <img src="image.png" alt="Profile Image" />
+      <p>
+        Hi there! I’m Disha, a dedicated and enthusiastic student of Computer
+        Science with a particular passion for web design and frontend
+        development. My journey into the world of technology began with a
+        fascination for how things work behind the scenes, and it quickly
+        evolved into a love for creating beautiful, functional websites. With a
+        solid foundation in programming and a keen eye for design, I specialize
+        in crafting engaging user interfaces that offer seamless and intuitive
+        experiences. Whether I’m diving into HTML, CSS, JavaScript, or exploring
+        the latest frameworks and tools, I’m always excited to turn creative
+        ideas into reality. I’m driven by a desire to solve problems and bring
+        innovative solutions to life. My goal is to combine technical skills
+        with artistic sensibilities to build websites that not only look great
+        but also provide exceptional user experiences. I thrive on collaboration
+        and am always eager to learn from others in the field, constantly
+        seeking out new challenges and opportunities for growth. When I’m not
+        coding or designing, you might find me exploring the latest trends in
+        web development, experimenting with new design concepts, or contributing
+        to open-source projects. I’m always on the lookout for new ways to
+        enhance my skills and make a positive impact in the tech community. Feel
+        free to connect with me—I’d love to chat about web design, technology,
+        or any exciting projects you’re working on!
+      </p>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2024 Disha's Portfolio. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms of Service</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
