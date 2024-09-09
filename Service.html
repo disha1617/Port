@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <style>
-         * {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disha's Portfolio</title>
+  <style>
+     * {
         margin: 0;
         padding: 0;
       }
@@ -39,36 +37,163 @@
         color: goldenrod;
         font-size: 1.2rem;
       }
-      .left {
-        font-size: 1.5rem;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch; /* Ensures all items stretch to the same height */
+      margin: 50px;
+      gap: 30px;
+    }
+    .container .item {
+      width: calc(30.333% - 40px); /* Adjust width to fit three items per row */
+      background-color: rgb(16, 16, 87);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; /* Ensures spacing between image and text */
+    }
+    .container .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      max-height: 200px; /* Limits image height to ensure uniformity */
+      object-fit: cover; /* Ensures images cover their containers without distortion */
+    }
+    .container .item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .container .item p {
+      font-size: 0.9rem;
+    }
+    .left{
+      font-size:1.5rem ;
+    }
+    footer {
+        background-color: rgb(16, 16, 87);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
       }
-      .container {
+
+      .footer-content {
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        margin: 50px;
-        gap: 30px;
-        flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
       }
-    </style>
-    <header>
-        <nav>
-          <div class="left">Disha's Portfolio</div>
-          <div class="right">
-            <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/About.html">About</a></li>
-              <li><a href="/Service.html">Services</a></li>
-              <li><a href="/">Projects</a></li>
-              <li><a href="/">Contact Me</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <div class="container">
-        <div class="images">
-            <img src=""/>
+
+      .footer-left p {
+        margin: 0;
+      }
+
+      .footer-right ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .footer-right ul li {
+        margin: 0;
+      }
+
+      .footer-right ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+      }
+
+      .footer-right ul li a:hover {
+        color: goldenrod;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Disha's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/About.html">About</a></li>
+          <li><a href="/Service.html">Services</a></li>
+          <li><a href="/Contact.html">Contact me</a></li>
+          <li><a href="/">Letter </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="item">
+      <img src="image2.webp" alt="Design Example 1" />
+      <h3>Web Design</h3>
+      <p>
+        Creating visually appealing and user-friendly designs for websites,
+        including layout, color schemes, typography, and graphics.
+      </p>
+    </div>
+    <div class="item">
+      <img src="image3.png" alt="Design Example 2" />
+      <h3>Responsive Design</h3>
+      <p>
+        Ensuring that websites look and work well on various screen sizes and devices.
+      </p>
+    </div>
+    <div class="item">
+      <img src="image4.webp" alt="Design Example 3" />
+      <h3>UI/UX Design</h3>
+      <p>
+        Designing user interfaces and experiences to ensure intuitive and easy navigation.
+      </p>
+    </div>
+    <div class="item">
+      <img src="image5.png" alt="Design Example 3" />
+      <h3>Frontend Development</h3>
+      <p>
+        Building the client-side of websites using HTML, CSS, and JavaScript. This includes implementing designs and making sure the site functions correctly across different devices and browsers.
+      </p>
+    </div>
+    <div class="item">
+      <img src="image6.png" alt="Design Example 3" />
+      <h3>Performace Optimization</h3>
+      <p>
+        Improving website speed and performance by optimizing code, images, and other elements.
+      </p>
+    </div>
+    <div class="item">
+      <img src="image7.png" alt="Design Example 3" />
+      <h3>Technical Support</h3>
+      <p>
+        Providing ongoing support and maintenance to fix bugs, update content, or address any issues that arise.
+      </p>
+    </div>
+  </div>
+  <br/>
+    <br/>
+    <br/>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2024 Disha's Portfolio. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms of Service</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
         </div>
       </div>
+    </footer>
 </body>
 </html>
